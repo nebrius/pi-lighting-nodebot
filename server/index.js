@@ -11,8 +11,10 @@ var board = new five.Board({
 
 board.on('ready', function() {
 
+  var instances = {}
+
   config.lights.forEach(function(light) {
-    light.instance = new five.Led(light.port);
+    instances[light.id] = new five.Led(light.port);
   });
 
   var app = express();
@@ -27,15 +29,8 @@ board.on('ready', function() {
   app.post('/api/lights', function (req, res) {
     var id = req.body.id;
 
-    var oldLight = config.lights.find(function (light) {
-      return light == config.defaultLight;
-    });
-    oldLight.instance.off();
-
-    var newLight = config.lights.find(function (light) {
-      return light == id;
-    });
-    newLight.instance.on();
+    instances[config.defaultLight].off();
+    instances[id].on();
 
     config.defaultLight = id;
     res.send('ok');
