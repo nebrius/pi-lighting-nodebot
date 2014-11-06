@@ -1,0 +1,12 @@
+{
+  "lights": [{
+    "id": "red",
+    "name": "Red",
+    "port": 4
+  }, {
+    "id": "white",
+    "name": "White",
+    "port": 7
+  }],
+  "defaultLight": "red"
+}
