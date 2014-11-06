@@ -17,6 +17,8 @@ board.on('ready', function() {
     instances[light.id] = new five.Led(light.port);
   });
 
+  instances[config.defaultLight].on();
+
   var app = express();
 
   app.use(express.static(path.join(__dirname, '..', 'client')));
