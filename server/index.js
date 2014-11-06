@@ -30,12 +30,12 @@ board.on('ready', function() {
     var oldLight = config.lights.find(function (light) {
       return light == config.defaultLight;
     });
-    oldLight.off();
+    oldLight.instance.off();
 
     var newLight = config.lights.find(function (light) {
       return light == id;
     });
-    newLight.on();
+    newLight.instance.on();
 
     config.defaultLight = id;
     res.send('ok');
