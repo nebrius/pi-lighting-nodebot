@@ -2,15 +2,15 @@
   "lights": [{
     "id": "red",
     "name": "Red",
-    "port": 7
+    "port": 8
   }, {
     "id": "white",
     "name": "White",
-    "port": 8
+    "port": 12
   }, {
     "id": "blue",
     "name": "Blue",
-    "port": 10
+    "port": 16
   }],
   "defaultLight": "red"
 }

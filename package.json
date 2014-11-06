@@ -1,0 +1,31 @@
+{
+  "name": "example-pi-lighting-nodebot",
+  "version": "1.0.0",
+  "description": "Example lighting NodeBot controllable via a web interface for the Raspberry Pi",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "server/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bryan-m-hughes/controllable-lighting.git"
+  },
+  "keywords": [
+    "nodebots",
+    "robots",
+    "IoT",
+    "raspberry pi"
+  ],
+  "author": "Bryan Hughes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryan-m-hughes/controllable-lighting/issues"
+  },
+  "homepage": "https://github.com/bryan-m-hughes/controllable-lighting",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "express": "^4.10.1",
+    "johnny-five": "^0.8.21",
+    "raspi-io": "^1.0.2"
+  }
+}
