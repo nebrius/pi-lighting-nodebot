@@ -1,5 +1,5 @@
-Controllable Lighting
-=====================
+Raspbery Pi Lighting NodeBot
+============================
 
 An example project demonstrating how to create a NodeBot that controls lights via a web interface, powered by a Raspberry Pi. To install Node.js on your Raspberry Pi, check out http://node-arm.herokuapp.com/. To install this app on your Raspberry Pi:
 
