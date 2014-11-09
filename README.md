@@ -14,7 +14,7 @@ Next, wire up some LEDs to your Raspberry Pi like this:
 Then run the server with:
 
 ```
-pi-lighting-nodebot
+sudo pi-lighting-nodebot
 ```
 
 At this point, the web server should be up and running! Connect to it from your browser by entering it's IP address in the address bar, and start setting some lights!
